@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.avenderov'
+version '1.0-SNAPSHOT'
+
+ext {
+    junitVersion = '5.9.1'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform("org.junit:junit-bom:$junitVersion")
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
