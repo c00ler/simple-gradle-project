@@ -1,1 +1,9 @@
+plugins {
+    id "com.gradle.develocity" version "3.17"
+}
+
+develocity {
+    server = "http://localhost:8080"
+}
+
 rootProject.name = 'simple-gradle-project'
